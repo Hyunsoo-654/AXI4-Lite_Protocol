@@ -1,21 +1,0 @@
-2025-09-05T16:44:35.848154900255-16:44:35 **** Incremental Build of configuration Debug for project fndController ****
-000-make all 
-000-'Building file: ../src/helloworld.c'
-000-'Invoking: MicroBlaze gcc compiler'
-000-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -ID:/cpu_verilog/250905_AXI4_Lite_FndController/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-000-'Finished building: ../src/helloworld.c'
-000-' '
-000-'Building target: fndController.elf'
-000-'Invoking: MicroBlaze gcc linker'
-000-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/cpu_verilog/250905_AXI4_Lite_FndController/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "fndController.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-000-'Finished building target: fndController.elf'
-000-' '
-000-'Invoking: MicroBlaze Print Size'
-000-mb-size fndController.elf  |tee "fndController.elf.size"
-000-   text	   data	    bss	    dec	    hex	filename
-000-   1972	    268	   3112	   5352	   14e8	fndController.elf
-000-'Finished building: fndController.elf.size'
-000-' '
-00255-
-16:44:36 Build Finished (took 813ms)
-
